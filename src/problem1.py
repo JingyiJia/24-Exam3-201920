@@ -139,7 +139,9 @@ def problem1(n):
     # and THEN try the full-credit version.
     # As always, CONTINUE to the next problem if you are STUCK on this one.
     # -------------------------------------------------------------------------
-    for
+
+    n= n -1
+    return fibonacci(n-2) + fibonacci(n-3)
 
 ###############################################################################
 # Our tests use the following to print error messages in red.

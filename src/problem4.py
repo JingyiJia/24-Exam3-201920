@@ -275,6 +275,16 @@ def problem4(seq_of_seq, n):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    result = -1
+    for k in range(1,len(seq_of_seq)):
+        for j in range(k):
+            if len(seq_of_seq[j][k])==0:
+                result = None
+            else:
+                 if is_prime(seq_of_seq[j][k])%2!=0 & seq_of_seq[j][k]>n :
+                    result = seq_of_seq[j][k]
+        return result
+
 
 
 ###############################################################################
