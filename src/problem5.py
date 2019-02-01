@@ -148,6 +148,9 @@ def problem5(seq_of_seq):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    for k in range(1,len(seq_of_seq)):
+        for j in range(1,k+1):
+            print([seq_of_seq[len(seq_of_seq[k])+1][k],seq_of_seq[0][k+1]])
 
 
 ###############################################################################
