@@ -185,7 +185,12 @@ def problem3(sequence):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    count = 0
+    for k in range(1,len(sequence)):
+            if is_prime(sequence[k])%2!=0:
+                sequence[k] = sequence[k]+3
+                count = count + 1
+    return count
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
